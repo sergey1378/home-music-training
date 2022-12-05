@@ -45,7 +45,7 @@ class App extends Component {
       <div className="App">
         <header className="App-header">
           {/* <img src={logo} className="App-logo" alt="logo" /> */}
-          <h1 className="App-title">OpenSheetMusicDisplay in React</h1>
+          <h1 className="App-title">Home Music Training</h1>
         </header>
         <select onChange={this.handleClick.bind(this)}>
           <option value="MuzioClementi_SonatinaOpus36No1_Part2.xml">Muzio Clementi: Sonatina Opus 36 No1 Part2</option>
