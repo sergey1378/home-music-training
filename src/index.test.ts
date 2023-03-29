@@ -1,3 +1,4 @@
+
 describe('MusicXML Player', () => {
   beforeAll(async () => {
     await browser

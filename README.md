@@ -1,19 +1,13 @@
-# MusicXML Player
-
-[![Build](https://github.com/infojunkie/musicxml-player/actions/workflows/continuous-integrations.yaml/badge.svg?branch=main)](https://github.com/infojunkie/musicxml-player/actions/workflows/continuous-integrations.yaml)
-
-A simple JavaScript component that loads and plays MusicXML files in the browser using Web Audio and Web MIDI.
-
-### Getting started
-```
-npm install
-npm run build
-npm test
-npm run demo
-```
-Then open http://localhost:8080
-
-### Theory of operation
-This component synchronizes rendering and playback of MusicXML documents. Rendering is done using existing Web engraving libraries such as OpenSheetMusicDisplay or Verovio. Playback takes a specially-crafted MIDI file that corresponds to the given MusicXML, and sends the MIDI events to either a Web MIDI output, or to a Web Audio synthesizer.
-
-The crucial part of this functionality is to synchronize the measures and beats in the MusicXML file with the events of the MIDI file. In a nutshell, the component expects the MIDI file to contain special [marker meta messages](https://www.recordingblogs.com/wiki/midi-marker-meta-message) of the form `Measure:X` that occur at the start of each measure. This allows the player to synchronize the advancing cursor on the sheet with MIDI playback, and to account for loops and repeats. To produce MIDI files that contain these messages, you can use the companion tool [`musicxml-mma`](https://github.com/infojunkie/musicxml-mma) which produces and serves MIDI files from MusicXML documents.
+Рабочее название проекта "Home music training"
+Основные функции:
+ 1.Проигрывание файлов в формате .musicXML(многоголосных), изменение темпа
+ 2.Возможность сделать видимой нотную строку для пользователя только указанного инструмента
+ 3.Использование метронома при воспроизведении
+ 4.Дополнительная возможность просмотра анимации длтельностей для лучшего понимания счёта
+ 5.Реализация личного кабинета для каждого учащегося
+ 6.Возможность выбора произведений отдельно для каждого учащегося учителем в разных категориях:
+ обязательные и для самостоятельного обучения из базы произведений
+ 7.Страница с шпаргалкой по необходимым теоретическим навыкам(дополнительно)
+ 8.Система рейтинга и мотивации(дополнительно)
+ 9.База или ссылка на базу с необходимым аудио и видео материалом для обучения
+ 10.Возможность загузки musicXML файлов для администратора

@@ -74,13 +74,22 @@
   },
   "homepage": "https://github.com/infojunkie/musicxml-player#readme",
   "dependencies": {
+    "autoprefixer": "^10.4.14",
+    "babel-cli": "^6.26.0",
+    "babel-preset-react-app": "^3.1.2",
     "midi-file-slicer": "^6.0.71",
     "midi-json-parser": "^8.1.14",
     "midi-player": "github:infojunkie/midi-player#infojunkie",
     "opensheetmusicdisplay": "^1.7.1",
+    "postcss": "^8.4.21",
+    "postcss-cli": "^10.1.0",
     "standardized-audio-context": "^25.3.35",
     "verovio": "^3.14.0",
     "webaudiofont": "^3.0.4",
     "worker-timers": "^7.0.59"
-  }
+  },
+  "directories": {
+    "test": "test"
+  },
+  "keywords": []
 }

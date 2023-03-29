@@ -2,7 +2,9 @@
 <html>
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
-    <title>MusicXML Player Demo</title>
+    <title>Home music training</title>
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="reset.css">
     <style>
       body {
         background-color: wheat;
@@ -22,8 +24,18 @@
         height: 35px;
         width: 35px;
       }
+      #sheet {
+        margin-top: 5%;
+        margin-left: 5%;
+        width: auto;
+      }
     </style>
+     
     <script src='https://surikov.github.io/webaudiofont/npm/dist/WebAudioFontPlayer.js'></script>
+    
+   
+    
+    
     <script type="module">
       import * as MusicXMLPlayer from './dist/musicxml-player.esm.js';
       window.addEventListener("load", async () => {
@@ -56,11 +68,38 @@
     <div id="controls">
       <pre></pre><code id="version"></code></pre>
     </div>
+    
+    <nav class="navbar">
+      <div class="container">
+        <div class="navbar__wrap">
+          <div class="hamb">
+            <div class="hamb__field" id="hamb">
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+            </div>
+          </div>
+          <a href="#" class="logo" id="logo">Home music</a>
+          <ul class="menu" id="menu">
+            <li><a href="index.html">Ноты</a></li>
+            <li><a href="shpargalka.html">Шпаргалка</a></li>
+            <li><a href="baza.html">База знаний</a></li>
+            <li><a href="rating.html">Рейтинг</a></li>
+            <li><a href="#">Обратная связь</a></li>
+            <li><a href="#">Контакты</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="popup" id="popup"></div>
     <div id="player">
       <button class="player" id="rewind">⏮</button>
       <button class="player" id="pause">⏸</button>
       <button class="player" id="play">▶</button>
     </div>
     <div id="sheet"></div>
+    
+    
+    <script src='nav.js'></script>
   </body>
 </html>
